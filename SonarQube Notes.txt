@@ -320,6 +320,16 @@ cat sonar.log  ---> temp directory created
 
 delete that dir:   sudo rm -rf /opt/sonarqube/temp/
 
+Real time issue:
+................
+you run sonar user java enviroment varaibles issue
+vi ~/.bashrc
+ export SONAR_JAVA_PATH=/opt/jdk-11/bin/java
+source ~/.bashrc
+
+NOTE: this one also realtime issue
+
+
 sh sonar.sh start 
 sh sonar.sh status
 Then start the sonarqube server from sonar user and check the status.
